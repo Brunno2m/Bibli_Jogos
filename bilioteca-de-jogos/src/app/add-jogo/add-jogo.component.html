@@ -1,0 +1,31 @@
+<h2>Adicionar Novo Jogo</h2>
+<form (ngSubmit)="adicionarJogo()" class="mt-4">
+  <div class="mb-3">
+    <label class="form-label">Título:</label>
+    <input type="text" [(ngModel)]="titulo" name="titulo" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Ano de Publicação:</label>
+    <input type="number" [(ngModel)]="anoPublicacao" name="anoPublicacao" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Fabricante:</label>
+    <input type="text" [(ngModel)]="fabricante" name="fabricante" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Tipo:</label>
+    <select [(ngModel)]="tipo" name="tipo" class="form-select">
+      <option value="tabuleiro">Jogo de Tabuleiro</option>
+      <option value="carta">Jogo de Carta</option>
+    </select>
+  </div>
+  <div *ngIf="tipo === 'tabuleiro'" class="mb-3">
+    <label class="form-label">Número de Jogadores:</label>
+    <input type="number" [(ngModel)]="numeroJogadores" name="numeroJogadores" class="form-control" required>
+  </div>
+  <div *ngIf="tipo === 'carta'" class="mb-3">
+    <label class="form-label">Idade Mínima:</label>
+    <input type="number" [(ngModel)]="idadeMinima" name="idadeMinima" class="form-control" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Adicionar Jogo</button>
+</form>

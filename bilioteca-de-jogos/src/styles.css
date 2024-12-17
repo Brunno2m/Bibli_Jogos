@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('assets/retro_background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #fff;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.btn-primary, .btn-danger, .btn-info {
+  margin-top: 10px;
+}
+
+.navbar-dark .navbar-brand {
+  color: #fff;
+}
+
+.navbar-dark .nav-link {
+  color: rgba(255,255,255,.75);
+}
+
+.navbar-dark .nav-link:hover {
+  color: rgba(255,255,255,1);
+}
