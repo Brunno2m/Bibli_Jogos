@@ -17,7 +17,7 @@ export class BibliotecaService {
   }
 
   listarJogos(): Jogo[] {
-    return this.biblioteca.listarJogos(); // Retornando um array de Jogo[]
+    return this.biblioteca.listarJogos(); 
   }
 }
 
